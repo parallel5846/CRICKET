@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRICKET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cricket</h1>
+    <button onclick="
+        let randomNum = Math.random() * 3;
+        let comp;
+        if (randomNum > 0 && randomNum <= 1) {
+            comp = 'Bat';
+        } else if (randomNum > 1 && randomNum <= 2) {
+            comp = 'Ball';
+        } else {
+            comp = 'Stump';
+        }
+        const compChoice = (`Computer chose ${comp}`);
+
+        let result;
+        if (comp === 'Bat') {
+             result = (`It's a tie!`);
+        } else if (comp === 'Ball') {
+             result = ('You win!');
+        } else {
+            result = ('Computer wins!');
+        }
+
+        alert(`You chose Bat\n${compChoice}\n${result}`);
+    ">Bat</button>
+
+
+    <button onclick="
+        randomNum = Math.random() * 3;
+        if (randomNum > 0 && randomNum <= 1) {
+            comp = 'Bat';
+        } else if (randomNum > 1 && randomNum <= 2) {
+            comp = 'Ball';
+        } else {
+            comp = 'Stump';
+        }
+        compChoice = (`Computer chose ${comp}`);
+
+        if (comp === 'Bat') {
+             result = (`Computer wins! `);
+        } else if (comp === 'Ball') {
+             result = (`It's a tie!`);
+        } else {
+            result = ('You win!');
+        }
+
+        alert(`You chose Ball\n${compChoice}\n${result}`);
+    ">Ball</button>
+        
+    <button onclick="
+        randomNum = Math.random() * 3;
+        if (randomNum > 0 && randomNum <= 1) {
+            comp = 'Bat';
+        } else if (randomNum > 1 && randomNum <= 2) {
+            comp = 'Ball';
+        } else {
+            comp = 'Stump';
+        }
+        compChoice = (`Computer chose ${comp}`);
+
+        if (comp === 'Bat') {
+             result = (`You win! `);
+        } else if (comp === 'Ball') {
+             result = ('Computer wins!');
+        } else {
+            result = (`It's a tie!`);
+        }
+
+        alert(`You chose Stump\n${compChoice}\n${result}`);
+    
+    ">Stump</button>
+</body>
+</html>

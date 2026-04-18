@@ -1,0 +1,67 @@
+/* 🌙 Cozy background */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  overflow: hidden;
+}
+
+/* ✨ Glass container effect */
+h1 {
+  color: #f8fafc;
+  font-size: 48px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 🌸 Buttons container spacing */
+button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 12px;
+  border: none;
+
+  cursor: pointer;
+
+  /* glass effect */
+  background: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+
+  transition: all 0.3s ease;
+}
+
+/* 🌈 Hover effect */
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: rgba(20, 184, 166, 0.4); /* teal glow */
+  box-shadow: 0 0 15px #14b8a6;
+}
+
+/* 💥 Click animation */
+button:active {
+  transform: scale(0.95);
+}
+
+/* ✨ Smooth fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
