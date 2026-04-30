@@ -45,7 +45,7 @@ button {
 /* 🌈 Hover effect */
 button:hover {
   transform: translateY(-5px) scale(1.05);
-  background: rgba(20, 184, 166, 0.4); /* teal glow */
+  background: rgba(51, 224, 240, 0.4); /* teal glow */
   box-shadow: 0 0 15px #14b8a6;
 }
 
